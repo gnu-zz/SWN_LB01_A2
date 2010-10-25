@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_nhHa8N-MEd-2u9horzmvDQ" name="lechner.swn.lb01.logfile">
+  <elementImport xmi:id="_nj2l4N-MEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_nkCMEN-MEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_nkCMEd-MEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_nkCMEt-MEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_fjCfMN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_fu3UsN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_hPh2MN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_huWgMN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iBWUsN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iKRnMN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iLzRMN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iNtVsN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iPYwsN-OEd-2u9horzmvDQ"/>
+  <elementImport xmi:id="_iRb_IN-OEd-2u9horzmvDQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5I7JsN-NEd-2u9horzmvDQ" name="LogReader">
+    <ownedOperation xmi:id="_D0D2sN-OEd-2u9horzmvDQ" name="getLogEntries">
+      <ownedParameter xmi:id="_Tb2D4N-OEd-2u9horzmvDQ" type="_5I7JsN-NEd-2u9horzmvDQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7mUZMN-NEd-2u9horzmvDQ" name="LogEntry">
+    <ownedAttribute xmi:id="_wQwZsN-OEd-2u9horzmvDQ" name="Host" aggregation="composite"/>
+    <ownedAttribute xmi:id="_xv0YsN-OEd-2u9horzmvDQ" name="Identifier" aggregation="composite"/>
+    <ownedAttribute xmi:id="_Pvl_IN-PEd-2u9horzmvDQ" name="LogLine" aggregation="composite"/>
+    <ownedAttribute xmi:id="_RKxjsN-PEd-2u9horzmvDQ" name="Referrer" aggregation="composite"/>
+    <ownedAttribute xmi:id="_SLdkoN-PEd-2u9horzmvDQ" name="Request" aggregation="composite"/>
+    <ownedAttribute xmi:id="_U105IN-PEd-2u9horzmvDQ" name="Size" aggregation="composite"/>
+    <ownedAttribute xmi:id="_VawyMN-PEd-2u9horzmvDQ" name="StatusCode" aggregation="composite"/>
+    <ownedAttribute xmi:id="_WSTeMN-PEd-2u9horzmvDQ" name="Time" aggregation="composite"/>
+    <ownedAttribute xmi:id="_W1PMIN-PEd-2u9horzmvDQ" name="UserAgent" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A-VKQN-PEd-2u9horzmvDQ" memberEnd="_A-VKQd-PEd-2u9horzmvDQ _A-VxUN-PEd-2u9horzmvDQ">
+    <ownedEnd xmi:id="_A-VKQd-PEd-2u9horzmvDQ" name="src" type="_5I7JsN-NEd-2u9horzmvDQ" association="_A-VKQN-PEd-2u9horzmvDQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A-VKQ9-PEd-2u9horzmvDQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A-VKQt-PEd-2u9horzmvDQ"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_A-VxUN-PEd-2u9horzmvDQ" name="dst" type="_7mUZMN-NEd-2u9horzmvDQ" association="_A-VKQN-PEd-2u9horzmvDQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A-VxUt-PEd-2u9horzmvDQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A-VxUd-PEd-2u9horzmvDQ"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>

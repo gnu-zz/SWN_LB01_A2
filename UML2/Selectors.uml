@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_slxgQN-PEd-2u9horzmvDQ" name="Selectors">
+  <elementImport xmi:id="_smc1sN-PEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_smc1sd-PEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_smc1st-PEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_smc1s9-PEd-2u9horzmvDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_vxeAMN-PEd-2u9horzmvDQ" name="ISelector">
+    <ownedOperation xmi:id="_2j4IIN-PEd-2u9horzmvDQ" name="select"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kUXOQN-QEd-2u9horzmvDQ" name="TotalHitsSelector" clientDependency="_rf4ZwN-QEd-2u9horzmvDQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oAaCMN-QEd-2u9horzmvDQ" name="dependency"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pirGMN-QEd-2u9horzmvDQ" name="dependency1"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pr56sN-QEd-2u9horzmvDQ" name="dependency2"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pwLWsN-QEd-2u9horzmvDQ" name="dependency3"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pzr9sN-QEd-2u9horzmvDQ" name="dependency4"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p1XYsN-QEd-2u9horzmvDQ" name="dependency5"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p3RdMN-QEd-2u9horzmvDQ" name="dependency6"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p43_sN-QEd-2u9horzmvDQ" name="dependency7"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_rf4ZwN-QEd-2u9horzmvDQ" supplier="_vxeAMN-PEd-2u9horzmvDQ" client="_kUXOQN-QEd-2u9horzmvDQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vV_vsN-QEd-2u9horzmvDQ" name="BrowsersSelector" clientDependency="_0tjDMN-QEd-2u9horzmvDQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_0tjDMN-QEd-2u9horzmvDQ" supplier="_vxeAMN-PEd-2u9horzmvDQ" client="_vV_vsN-QEd-2u9horzmvDQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1pvlsN-QEd-2u9horzmvDQ" name="AverageHitsPerVisitorSelector"/>
+</uml:Package>
